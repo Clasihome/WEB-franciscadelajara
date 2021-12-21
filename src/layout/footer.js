@@ -129,7 +129,7 @@ export default ()=> {
         <Row className="align-items-center">
           <Col xs={{ span: 6, order: 6 }} md={{ span: 6, order: 0 }} lg={4}>
             <Link to="/">
-              <Logo dark />
+              <Logo />
             </Link>
             <InfoList>
               {

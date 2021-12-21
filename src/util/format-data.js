@@ -5,23 +5,24 @@ export default (data) => {
       typeId: data.user ? "user" : "office",
       officeId: data.user ? data.user : data.office,
       primaryColor: data.primaryColor ? data.primaryColor : "#FF605B",
-      address: data.address ? data.address : "chile, santiago. Av 1 calle 2 local 1a",
-      email: data.email ? data.email : "contacto@clasihome.com",
+      //#1691DE - azul
+      address: data.address ? data.address : "Maestra lidia Torres 45 depto 304",
+      email: data.email ? data.email : "claudio@2cpropiedades.cl",
       facebook: data.facebook ? data.facebook : "https://facebook.com",
       twitter: data.twitter ? data.twitter : "https://twitter.com",
       instagram: data.instagram ? data.instagram : "https://instagram.com",
       favicon: data.favicon ? data.favicon : require("../images/icon.png"),      
-      lat: data.lat ? data.lat : "-33.410167",
-      lng: data.lng ? data.lng : "-70.655265",
+      lat: data.lat ? data.lat : "-33.42421616100679",
+      lng: data.lng ? data.lng : "-70.63878459071535",
       logo: data.logo ? data.logo : require("../images/logo-light.png"),
       logoDark: data.logoDark ? data.logoDark : require("../images/logo-dark.png"),
       movil: data.movil ? data.movil : "+56 9 1234 1234",
       phone: data.phone ? data.phone : "+56 2 1234 1234",
-      footerText: data.footerText ? data.footerText : "Somos una empresa con mas de 20 años en el rubro del corretaje inmobiliario",
+      footerText: data.footerText ? data.footerText : "Somos una empresa con mas de 25 años en el rubro del corretaje inmobiliario",
       home:{
         hero: {
           background: data.home && data.home.hero && data.home.hero.background ? data.home.hero.background : require("../images/template-home-hero-background.jpg"),
-          title: data.home && data.home.hero && data.home.hero.title ? data.home.hero.title : "Tenemos propiedades <br /> exclusivas pensadas para tí"
+          title: data.home && data.home.hero && data.home.hero.title ? data.home.hero.title : "Tu asesor inmobiliario de confianza"
         },        
         properties: {
           title: data.home && data.home.properties && data.home.properties.title ? data.home.properties.title : "Contamos con una selección exclusiva de propiedades.",
