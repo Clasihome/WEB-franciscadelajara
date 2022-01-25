@@ -6,23 +6,23 @@ export default (data) => {
       officeId: data.user ? data.user : data.office,
       primaryColor: data.primaryColor ? data.primaryColor : "#FF605B",
       //#1691DE - azul
-      address: data.address ? data.address : "Maestra lidia Torres 45 depto 304",
-      email: data.email ? data.email : "claudio@2cpropiedades.cl",
+      address: data.address ? data.address : "Badajoz 100, oficina 523 , las Condes",
+      email: data.email ? data.email : "gerencia@2cpropiedades.cl",
       facebook: data.facebook ? data.facebook : "https://facebook.com",
       twitter: data.twitter ? data.twitter : "https://twitter.com",
       instagram: data.instagram ? data.instagram : "https://instagram.com",
       favicon: data.favicon ? data.favicon : require("../images/icon.png"),      
-      lat: data.lat ? data.lat : "-33.42421616100679",
-      lng: data.lng ? data.lng : "-70.63878459071535",
+      lat: data.lat ? data.lat : "-33.40807316856108", 
+      lng: data.lng ? data.lng : "-70.57273730238288",
       logo: data.logo ? data.logo : require("../images/logo-light.png"),
       logoDark: data.logoDark ? data.logoDark : require("../images/logo-dark.png"),
-      movil: data.movil ? data.movil : "+56 9 1234 1234",
-      phone: data.phone ? data.phone : "+56 2 1234 1234",
+      movil: data.movil ? data.movil : "+56 9 2259 2692",
+      phone: data.phone ? data.phone : "+56 9 2259 2692",
       footerText: data.footerText ? data.footerText : "Somos una empresa con mas de 25 años en el rubro del corretaje inmobiliario",
       home:{
         hero: {
           background: data.home && data.home.hero && data.home.hero.background ? data.home.hero.background : require("../images/template-home-hero-background.jpg"),
-          title: data.home && data.home.hero && data.home.hero.title ? data.home.hero.title : "Tu asesor inmobiliario de confianza"
+          title: data.home && data.home.hero && data.home.hero.title ? data.home.hero.title : "Tu inmobiliaria de confianza"
         },        
         properties: {
           title: data.home && data.home.properties && data.home.properties.title ? data.home.properties.title : "Contamos con una selección exclusiva de propiedades.",
@@ -81,7 +81,7 @@ export default (data) => {
         },
         history: {
           background: data.about && data.about.history && data.about.history.background ? data.about.history.background : require("../images/template-about-history-background.jpg"),
-          description: data.about && data.about.history && data.about.history.description ? data.about.history.description : "<p>Somos clasihome, una empresa con varios años de trayectoria en el dinámico mercado inmobiliario, reconocidos por un servicio altamente personalizado y eficiente.</p><p>Nuestra gran fortaleza es el profundo conocimiento comercial inmobiliario que nos permite agregar valor a todos los proyectos que emprendemos y servicios que entregamos.<p/>",
+          description: data.about && data.about.history && data.about.history.description ? data.about.history.description : "<p>Somos 2cpropiedades, una empresa con varios años de trayectoria en el dinámico mercado inmobiliario, reconocidos por un servicio altamente personalizado y eficiente.</p><p>Nuestra gran fortaleza es el profundo conocimiento comercial inmobiliario que nos permite agregar valor a todos los proyectos que emprendemos y servicios que entregamos.<p/>",
           title: data.about && data.about.history && data.about.history.title ? data.about.history.title : "Nuestra Historia"
         },
         description: {

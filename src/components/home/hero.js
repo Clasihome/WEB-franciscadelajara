@@ -11,12 +11,12 @@ import FormCode from '../forms/code';
 import { Agro } from '../../icons';
 
 const MainCont = styled(Section)`
-  //background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("${props => props.src}");
-  background-image: url("${props => props.src}");
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("${props => props.src}");
+  //background-image: url("${props => props.src}");
   //background-attachment: fixed;
   background-position: top;
   background-size: cover;
-  //color: #fff;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;

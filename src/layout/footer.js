@@ -140,16 +140,18 @@ export default ()=> {
                   </InfoItem>                  
                 )
               }
-              {
-                state.email && (
                   <InfoItem>
                     <MailOutlined />
                     <InfoLink title="Enviar un email" href={`mailto:${state.email}`}>
-                      {state.email}
+                      gerencia@2cpropiedades.cl
                     </InfoLink>
                   </InfoItem>                  
-                )
-              }
+                  <InfoItem>
+                    <MailOutlined />
+                    <InfoLink title="Enviar un email" href={`mailto:${state.email}`}>
+                      operaciones@2cpropiedades.cl
+                    </InfoLink>
+                  </InfoItem>                                    
               {
                 state.phone && (
                   <InfoItem>

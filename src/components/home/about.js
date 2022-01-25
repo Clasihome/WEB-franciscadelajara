@@ -7,8 +7,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Section, Button } from '../../styled-components';
 
 const SectionCustom = styled(Section)`
-  //background-color: ${props=> props.theme.primaryColor};
-  margin-top: 10rem;
+  //background-color: ${props=> props.theme.primaryColor};  
+  @media (min-width: 992px){
+    margin-top: 10rem;
+  }
 `
 const InfoCont = styled.div`
   display: flex;
@@ -46,12 +48,15 @@ const ImageInnerCont = styled.div`
   position: relative;
 `
 const Image = styled.img`
-  height: 500px;
+  height: 200px;
   object-fit: cover;
   object-position: center;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
+  @media (min-width: 768px){
+    height: 500px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
 `
 
 export default ()=> {
@@ -59,7 +64,7 @@ export default ()=> {
   return(
     <SectionCustom>
       <Row noGutters>
-        <Col xs={12} md={12} lg={6}>
+        <Col xs={{ span: 12, order: 1 }} md={12} lg={{ span: 6, order: 0 }}>
           <InfoCont>
             <Title>
               {state.home.about.banner.title}

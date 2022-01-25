@@ -44,7 +44,7 @@ export default ()=>{
         <Row>
           <Col xs={12} md={6}>
             <Title>Ofrecemos un servicio ajustado a las necesidades de cada cliente</Title>  
-            <SubTitle>Estas son algunas de las cosas que podemos hacer por vos:</SubTitle>     
+            <SubTitle>Estas son algunas de las cosas que podemos hacer por ti:</SubTitle>     
             <Services>
               <ServiceCarousel />
             </Services>
