@@ -14,6 +14,7 @@ const Title = styled.h2`
   padding: 2rem 0;
   @media(min-width: 768px){
     width: 50%;
+    margin-top: 2rem;
   }
 `
 const SubTitle = styled.p`
@@ -169,7 +170,7 @@ export default ()=> {
                 <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 1 }}>
                   <MailParagraph>
                     <span>También puede escribirnos a </span>
-                    <MailAdress href={`tel:${state.phone}`}>{state.email}</MailAdress>
+                    <MailAdress href="mailto:gerencia@2cpropiedades.cl">operaciones@2cpropiedades.cl</MailAdress>
                   </MailParagraph>
                 </Col>
               </Row>

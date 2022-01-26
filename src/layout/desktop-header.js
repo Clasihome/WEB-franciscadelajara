@@ -34,7 +34,7 @@ const NavItem = styled.li`
   
 `
 
-export default ({ light })=> {
+export default ({ dark, light })=> {
   const state = useContext(context);
 
   return(
@@ -43,26 +43,26 @@ export default ({ light })=> {
       <Container>
         <Navigation>
           <Link to="/">
-            <Logo light={light} light={!light} />
+            <Logo dark={dark} />
           </Link>
           <NavList horizontal>
             <NavItem>
               <Link to="/properties">
-                <NavLink light>
+                <NavLink dark={dark} light={!dark}>
                   Propiedades
                 </NavLink>
               </Link>            
             </NavItem>
             <NavItem>
               <Link to="/about">
-                <NavLink light>
+                <NavLink dark={dark} light={!dark}>
                   Nosotros
                 </NavLink>
               </Link>            
             </NavItem>
             <NavItem>
               <Link to="/contact">
-                <NavLink light>
+                <NavLink dark={dark} light={!dark}>
                   Contacto
                 </NavLink>
               </Link>                                    

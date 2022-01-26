@@ -3,8 +3,8 @@ import context from '../context';
 import styled from 'styled-components';
 
 const Logo = styled.img`
-  min-width: 100px;
-  min-height: 80px;
+  min-width: 150px;
+  min-height: 100px;
   max-width: 250px;
   max-height: 43px;
   object-fit: contain;
@@ -14,6 +14,6 @@ const Logo = styled.img`
 export default ({ dark, mobile })=> {
   const state = useContext(context);
   return(
-    <Logo src={dark ? state.logoDark : state.logo} alt="Logo" />
+    <Logo src={dark ? require("../images/logo-dark.png") : state.logo} alt="Logo" />
   )
 }

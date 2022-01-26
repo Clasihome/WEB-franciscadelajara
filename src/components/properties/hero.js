@@ -11,7 +11,7 @@ const MainCont = styled(Section)`
   align-items: center;
   justify-content: center;
   //margin-bottom: 0;
-  background-image: url("${require("../../images/template-home-hero-background.jpg")}");
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("${require("../../images/template-home-hero-background.jpg")}");
   background-size: cover;
   background-position: top;
 `

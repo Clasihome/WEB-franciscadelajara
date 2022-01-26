@@ -218,7 +218,7 @@ export default ({ children, location }) => {
           <GlobalStyles />
           <MobileHeader />
           <DesktopHeader
-            //dark={location.pathname !== "/" && location.pathname !== "/about" ? true : false}
+            dark={location.pathname === "/contact" || location.pathname === "/about" ? true : false}
           />
           {children}
           <ContactButton title="Enviar WhatsApp" rel="noopener" target="_blank" href={`https://api.whatsapp.com/send?phone=${data.data.movil.replace(/\s/g,'')}&text=Hola,%20estoy%20visitando%20su%20sitio%20Web%20y%20quisiera%20comunicarme%20con%20uestedes.`}>

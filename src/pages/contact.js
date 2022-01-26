@@ -8,7 +8,7 @@ export default ()=> {
   return(
     <Fragment>
       <Contact />
-      <Ubication />
+      {/* <Ubication /> */}
     </Fragment>
   )
 }

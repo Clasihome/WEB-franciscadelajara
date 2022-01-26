@@ -42,21 +42,21 @@ export default ()=>{
     <Section>
       <Container>
         <Row>
-          <Col xs={12} md={6}>
+          <Col xs={12} md={12}>
             <Title>Ofrecemos un servicio ajustado a las necesidades de cada cliente</Title>  
             <SubTitle>Estas son algunas de las cosas que podemos hacer por ti:</SubTitle>     
             <Services>
               <ServiceCarousel />
             </Services>
           </Col>
-          <Col xs={12} md={6}>
+          {/* <Col xs={12} md={6}>
             <Reviews>
               <Quote>
                 <ClasiQuote />
               </Quote>              
               <ReviewsCarousel />
             </Reviews>
-          </Col>       
+          </Col>        */}
         </Row>
       </Container>
     </Section>
