@@ -14,8 +14,8 @@ export default (data) => {
       favicon: data.favicon ? data.favicon : require("../images/icon.png"),      
       lat: data.lat ? data.lat : "-33.40807316856108", 
       lng: data.lng ? data.lng : "-70.57273730238288",
-      logo: data.logo ? data.logo : require("../images/logo-light.png"),
-      logoDark: data.logoDark ? data.logoDark : require("../images/logo-dark.png"),
+      logo: data.logo ? data.logo : require("../images/logo-light.svg"),
+      logoDark: data.logoDark ? data.logoDark : require("../images/logo-dark.svg"),
       movil: data.movil ? data.movil : "+56 9 2259 2692",
       phone: data.phone ? data.phone : "+56 9 2259 2692",
       footerText: data.footerText ? data.footerText : "Somos una empresa con mas de 25 años en el rubro del corretaje inmobiliario",
@@ -41,16 +41,16 @@ export default (data) => {
         services: {
           items: data.home && data.home.services && data.home.services.items.length ? data.home.services.items : [
             {
-              title: "Compras",
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium fringilla ex at hendrerit"
+              title: "Compra",
+              description: "¿Buscas propiedad? Gestionamos esa busqueda con rapidéz y eficacia, cuenta con nosotros."
+            },
+            {
+              title: "Venta",
+              description: "Asesoría en todo el proceso de venta, desde la publicidad a la entrega material del bien inmueble."
             },
             {
               title: "Arriendo",
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium fringilla ex at hendrerit"
-            },
-            {
-              title: "Compras",
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium fringilla ex at hendrerit"
+              description: "Buscamos el arrendatario conm el perfil óptimo para tu propiedad en el menor tiempo posible."
             }
           ]
         },  

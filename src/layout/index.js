@@ -172,6 +172,7 @@ export default ({ children, location }) => {
       else{
         console.log("NO DATA", dataEval);
         const dataEval = formatData({ office: "5e8e36b31c9d440000d35090" });
+        // 2cpropiedades: 61a56bde722bb300097b3d3f
         const featuredProperties = await getFeatured(dataEval.officeId, dataEval.typeId, dataEval.home.properties.maxProperties);
         dataEval.featuredProperties = featuredProperties.properties;
         setData({ loading: false, data: dataEval });
@@ -204,14 +205,14 @@ export default ({ children, location }) => {
         <MainCont>
           <Helmet>
             <meta charSet="utf-8" />
-            <meta name="description" content="Conectamos clientes con propiedades. Optimiza, gestiona y vende más. La nueva plataforma inmobiliaria que te ayuda a optimizar tu tiempo de trabajo y obtener mejores resultados. Pruébalo gratis por 15 días." />
-            <meta name="keywords" content="clasihome, clasipro, clasihome propiedades chile, tecnología chile, software" />
-            <title>Clasihome - Software Inmobilario de Chile</title>
-            <link rel="canonical" href="https://clasihome.com/" />
-            <meta property="og:url" content="https://clasihome.com/" />
-            <meta property="og:title" content="Clasihome - Software Inmobilario de Chile" />
-            <meta property="og:description" content="Conectamos clientes con propiedades. Optimiza, gestiona y vende más. La nueva plataforma inmobiliaria que te ayuda a optimizar tu tiempo de trabajo y obtener mejores resultados. Pruébalo gratis por 15 días." />
-            <meta property="og:image" content="https://clasihome.com/logotipo_full.png" />
+            <meta name="description" content="Somos una empresa con mas de 20 años en el rubro del corretaje inmobiliario" />
+            <meta name="keywords" content="compra de propiedades, venta de propiedades, galpones, inmobiliaria, propiedades, chile, propiedades chile" />
+            <title>2cpropiedades - Tu inmobiliaria de confianza</title>
+            <link rel="canonical" href="http://2cpropiedades.cl/" />
+            <meta property="og:url" content="http://2cpropiedades.cl/" />
+            <meta property="og:title" content="2cpropiedades - Tu inmobiliaria de confianza" />
+            <meta property="og:description" content="Somos una empresa con mas de 20 años en el rubro del corretaje inmobiliario." />
+            <meta property="og:image" content="http://2cpropiedades.cl/logo-dark.png" />
             <meta name="og:type" content="website" />
             <meta name="theme-color" content={data.data.primaryColor} /> 
           </Helmet>                       
