@@ -9,7 +9,14 @@ import { Section } from '../../styled-components';
 const Title = styled.h2`
   color: ${props => props.theme.primaryColor};
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+`
+const Title2 = styled.h2`
+  color: ${props => props.theme.primaryColor};
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
 `
 
 const Card = styled.div`
@@ -24,10 +31,10 @@ const Card = styled.div`
   }
 `
 const Avatar = styled.img`
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
+  width: 200px;
+  height: 200px;
+  object-fit: scale-down;
+  object-position:  50% 50%;;
   margin-bottom: 2rem;
 `
 const NoAvatar = styled.div`
@@ -47,12 +54,19 @@ const NoAvatar = styled.div`
 `
 const Info = styled.p`
   margin: 0;
+  font-size: 1rem;
   color: ${props => props.theme.primaryColor};
   font-weight: bold;
 `
+const Info2 = styled.p`
+  margin: 0;
+  font-size: 1rem;
+  color: ${props => props.theme.primaryColor};
+  font-weight: normal;
+`
 const Resume = styled.p`
   margin: 2rem 0;
-  text-align: center;
+  text-align: justify;
   flex: 1;
 `
 const User = ({ avatar, cv, email, fullName, phone }) => (
@@ -66,7 +80,7 @@ const User = ({ avatar, cv, email, fullName, phone }) => (
     <Resume>
       {cv}
     </Resume>
-    <Info>{email}</Info>
+    <Info2>{email}</Info2>
     <Info>{phone}</Info>
   </Card>
 )
@@ -76,19 +90,27 @@ export default ()=> {
   return(
     <Section>
       <Container>
-        <Row>
-          <Col xs={12}>
+         <Col xs={12}>
             <Title>
               Quienes somos
             </Title>
           </Col>
+          <Col xs={12}>
+            <Title2>
+              Un gran equipo de emprendedoras que buscamos entregar a nuestros clientes todo lo necesario para puedan tomar la mejor desición
+            </Title2>
+          </Col>
+        <Row around="xs">
+          <Col xs={2}  />
           {
+            
             state.about.team.items.map(item => (
               <Col key={uuid()} xs={12} md={4} lg={3}>
                 <User {...item} />
               </Col>
+              
             ))
-          }
+          }       
         </Row>
       </Container>
     </Section>

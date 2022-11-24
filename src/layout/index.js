@@ -14,7 +14,7 @@ import Footer from './footer';
 const GlobalStyles = createGlobalStyle`
   *{
     //font-family: 'Open Sans', sans-serif;
-    font-family: 'Rubik', sans-serif !important;
+    font-family: Times New Roman, Georgia, serif !important;
   }
   html{
     font-size: 14px;
@@ -39,7 +39,7 @@ const GlobalStyles = createGlobalStyle`
     }
   }
   h1, h2, h3, h4, h5, h6{
-    font-family: 'Rubik', sans-serif;
+    font-family: Times New Roman, Georgia, serif;
     font-weight: 300;
   }
   button, input, select, option, textarea{
@@ -205,14 +205,14 @@ export default ({ children, location }) => {
         <MainCont>
           <Helmet>
             <meta charSet="utf-8" />
-            <meta name="description" content="Somos una empresa con mas de 20 años en el rubro del corretaje inmobiliario" />
-            <meta name="keywords" content="compra de propiedades, venta de propiedades, galpones, inmobiliaria, propiedades, chile, propiedades chile" />
-            <title>2cpropiedades - Tu inmobiliaria de confianza</title>
-            <link rel="canonical" href="http://2cpropiedades.cl/" />
-            <meta property="og:url" content="http://2cpropiedades.cl/" />
-            <meta property="og:title" content="2cpropiedades - Tu inmobiliaria de confianza" />
-            <meta property="og:description" content="Somos una empresa con mas de 20 años en el rubro del corretaje inmobiliario." />
-            <meta property="og:image" content="http://2cpropiedades.cl/logo-dark.png" />
+            <meta name="description" content="o" />
+            <meta name="keywords" content="ce" />
+            <title>Francisca De La Jara</title>
+            <link rel="canonical" href="http://franciscadelajara.cl/" />
+            <meta property="og:url" content="http://franciscadelajara.cl/" />
+            <meta property="og:title" content="Fracisca De La Jara" />
+            <meta property="og:description" content="" />
+            <meta property="og:image" content="http://franciscadelajara.cl/logo-dark.png" />
             <meta name="og:type" content="website" />
             <meta name="theme-color" content={data.data.primaryColor} /> 
           </Helmet>                       

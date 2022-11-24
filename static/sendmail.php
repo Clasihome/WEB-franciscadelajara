@@ -29,25 +29,25 @@
         "Recibiste una consulta desde 2cpropiedades<br>
         <br>
         <b><u>Agente:</u> </b>".$nameAgent."<br/>
-        <b><u>Asunto:</u> </b>Recibiste una consulta desde 2cpropiedades.cl<br/>
+        <b><u>Asunto:</u> </b>Recibiste una consulta desde franciscadelajara.cl<br/>
         <b><u>Cliente:</u> </b>".$name."<br/>
         <b><u>Email:</u> </b><a href='mailto:".$email."'>".$email."</a><br/>
         <b><u>Celular:</u> </b>".$mobile."<br/><br/>
         <b><u>Mensaje:</u> </b>".$message."<br/><br/>
 
-        <a href='http://2cpropiedades.cl/'>www.2cpropiedades.cl</a>
+        <a href='http://franciscadelajara.cl/'>www.franciscadelajara.cl</a>
         ";
         
         $mail->isSMTP();                     
         $mail->Host = 'c2120007.ferozo.com';  
         $mail->SMTPAuth = true;                
-        $mail->Username = 'operaciones@2cpropiedades.cl';
+        $mail->Username = 'operaciones@franciscadelajara.cl';
         $mail->Password = 'Propiedades2022';                
         $mail->SMTPSecure = 'ssl';                            
         $mail->Port = 465;          
         
-        $mail->SetFrom( $email , 'Un cliente quiere contactar con 2cpropiedades.cl' );
-        $mail->addAddress( "operaciones@2cpropiedades.cl", 'Mensaje desde la web');   
+        $mail->SetFrom( $email , 'Un cliente quiere contactar con franciscadelajara.cl' );
+        $mail->addAddress( "operaciones@franciscadelajara.cl", 'Mensaje desde la web');   
         $mail->isHTML(true);                                 
         $mail->Subject = $subject;
         $body = "$mensajeCompleto";

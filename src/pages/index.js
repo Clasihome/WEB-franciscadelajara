@@ -13,7 +13,7 @@ export default ()=> {
     <Fragment>
       <Hero />      
       <Properties />
-      <Customers title='NUESTROS CLIENTES CONFÍAN EN NOSOTROS' />
+
       <About />
       <OfficeInfo />
       <Contact />

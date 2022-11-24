@@ -143,13 +143,13 @@ export default ()=> {
                   <InfoItem>
                     <MailOutlined />
                     <InfoLink title="Enviar un email" href={`mailto:${state.email}`}>
-                      gerencia@2cpropiedades.cl
+                      gerencia@franciscadelajara.cl
                     </InfoLink>
                   </InfoItem>                  
                   <InfoItem>
                     <MailOutlined />
                     <InfoLink title="Enviar un email" href={`mailto:${state.email}`}>
-                      operaciones@2cpropiedades.cl
+                      operaciones@franciscadelajara.cl
                     </InfoLink>
                   </InfoItem>                                    
               {
@@ -166,7 +166,7 @@ export default ()=> {
                 state.movil && (
                   <InfoItem>
                     <WhatsAppOutlined />
-                    <InfoLink title="Enviar WhatsApp" rel="noopener" target="_blank" href={`https://api.whatsapp.com/send?phone=${state.movil.replace(/\s/g,'')}&text=Hola,%20estoy%20visitando%20su%20sitio%20Web%20y%20quisiera%20comunicarme%20con%20uestedes.`}>
+                    <InfoLink title="Enviar WhatsApp" rel="noopener" target="_blank" href={`https://api.whatsapp.com/send?phone=${state.movil.replace(/\s/g,'')}&text=Hola,%20estoy%20visitando%20su%20sitio%20Web%20y%20quisiera%20comunicarme%20con%20ustedes.`}>
                       {state.movil}
                     </InfoLink>
                   </InfoItem>                      

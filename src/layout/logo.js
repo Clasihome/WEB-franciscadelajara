@@ -14,6 +14,6 @@ const Logo = styled.img`
 export default ({ dark, mobile })=> {
   const state = useContext(context);
   return(
-    <Logo src={dark ? require("../images/logo-dark.svg") : state.logo} alt="Logo" />
+    <Logo src={dark ? require("../images/logo-dark.png") : state.logo} alt="Logo" />
   )
 }

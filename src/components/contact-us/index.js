@@ -170,7 +170,7 @@ export default ()=> {
                 <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 1 }}>
                   <MailParagraph>
                     <span>También puede escribirnos a </span>
-                    <MailAdress href="mailto:gerencia@2cpropiedades.cl">operaciones@2cpropiedades.cl</MailAdress>
+                    <MailAdress href="mailto:gerencia@franciscadelajara.cl">operaciones@franciscadelajara.cl</MailAdress>
                   </MailParagraph>
                 </Col>
               </Row>

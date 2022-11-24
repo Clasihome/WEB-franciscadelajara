@@ -5,7 +5,7 @@ import { capitalize } from '../../util';
 
 const DefaultOption = styled.option`
   color: #212121;
-  font-family: 'Rubik', sans-serif;
+  font-family: Times New Roman, Georgia, serif;
 `
 const AllOption = styled(DefaultOption)`
   font-weight: bold;
@@ -13,14 +13,14 @@ const AllOption = styled(DefaultOption)`
 const Option = styled.option`
   color: #212121;
   font-size: 1rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: Times New Roman, Georgia, serif;
 `
 
 const Select = styled.select`
   border: none;
   outline: none;
   font-size: 1rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: Times New Roman, Georgia, serif;
   color: ${props => props.primary ? props.theme.primaryColor : "#212121"};
   -webkit-appearance: none;
   -moz-appearance: none;
